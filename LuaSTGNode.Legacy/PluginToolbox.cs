@@ -493,6 +493,8 @@ namespace LuaSTGEditorSharp
                 , new AddNode(AddBeforeBossNode));
             tanialib.Add(new ToolboxItemData("stagecamerablocker", "/LuaSTGNode.Legacy;component/images/camerasetter.png", "Stage Camera Test Blocker")
                 , new AddNode(AddStageCameraTestBlockerNode));
+            tanialib.Add(new ToolboxItemData("setsplash", "/LuaSTGNode.Legacy;component/images/SetSplash.png", "Set Splash")
+                , new AddNode(AddSetSplashNode));
             #endregion
             ToolInfo.Add("TaniaLib", tanialib);
 
@@ -1593,6 +1595,11 @@ namespace LuaSTGEditorSharp
         private void AddStageCameraTestBlockerNode()
         {
             parent.Insert(new StageCameraTestBlocker(parent.ActivatedWorkSpaceData));
+        }
+
+        private void AddSetSplashNode()
+        {
+            parent.Insert(new SetSplash(parent.ActivatedWorkSpaceData));
         }
 
         #endregion

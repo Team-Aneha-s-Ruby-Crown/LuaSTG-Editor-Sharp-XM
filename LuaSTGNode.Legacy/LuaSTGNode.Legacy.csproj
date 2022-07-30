@@ -288,6 +288,7 @@
     <Compile Include="EditorData\Node\Stage\StageGroupFinish.cs" />
     <Compile Include="EditorData\Node\TaniaLib\BeforeBoss.cs" />
     <Compile Include="EditorData\Node\TaniaLib\GiveRank.cs" />
+    <Compile Include="EditorData\Node\TaniaLib\SetSplash.cs" />
     <Compile Include="EditorData\Node\TaniaLib\StageCameraTestBlocker.cs" />
     <Compile Include="EditorData\Node\TaskTypes.cs" />
     <Compile Include="EditorData\Node\TaskAlikeTypes.cs" />
@@ -2198,6 +2199,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\16x16\beforeboss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\SetSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\16x16\SetSplash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
