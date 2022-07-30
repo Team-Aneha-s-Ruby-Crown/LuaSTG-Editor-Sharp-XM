@@ -53,11 +53,11 @@ namespace LuaSTGEditorSharp.Windows.Input
                         , "LAYER_ENEMY_BULLET_EF-5", "LAYER_ENEMY_BULLET_EF", "LAYER_ENEMY_BULLET_EF+5"
                         , "LAYER_TOP-5", "LAYER_TOP", "LAYER_TOP+5" });
             target.Add("stageGroup"
-                , new string[] { "Easy", "Normal", "Hard", "Lunatic", "Extra" });
+                , new string[] { "Chill", "Hard", "Overdrive", "Canvas" });
             target.Add("objDifficulty"
-                , new string[] { "All", "Easy", "Normal", "Hard", "Lunatic" });
+                , new string[] { "All", "Chill", "Hard", "Overdrive", "Canvas" });
             target.Add("difficulty"
-                , new string[] { "1", "2", "3", "4", "5" });
+                , new string[] { "1", "2", "3", "4" });
             target.Add("SCName"
                 , new string[] { "", "「」" });
             target.Add("bulletStyle"
@@ -89,7 +89,8 @@ namespace LuaSTGEditorSharp.Windows.Input
                         , "bamboo2_background", "cube_background", "gensokyosora_background", "hongmoguanB_background"
                         , "icepool_background", "lake_background", "le03_5_background", "magic_forest_fast_background"
                         , "river_background", "starlight_background", "temple2_background", "woods_background"
-                        , "world_background"});
+                        , "world_background", "woods_snow_background", "woods_snow2_background", "aeralis_village_background"
+                        , "lunar_lake_background", "beast_ruins_background", "myarastage6_background"});
             target.Add("prop"
                 , new string[] { "x", "y", "rot", "omiga", "timer", "vx", "vy", "ax", "ay", "layer", "group"
                         , "hide", "bound", "navi", "colli", "status", "hscale", "vscale", "a", "b", "rect", "img"
@@ -113,7 +114,7 @@ namespace LuaSTGEditorSharp.Windows.Input
                         , "focusfix", "focusfix2", "focusin", "heal", "ice", "ice2", "item01", "ophide", "opshow" });
             target.Add("item"
                 , new string[] { "item_power","item_faith","item_point","item_power_large","item_power_full"
-                        ,"item_faith_minor", "item_extend","item_chip","item_bomb","item_bombchip"});
+                        ,"item_faith_minor", "item_extend","item_chip","item_bomb","item_bombchip", "item_bloom"});
             target.Add("lrstr"
                 , new string[] { "\"left\"", "\"right\"" });
             target.Add("directionMode"

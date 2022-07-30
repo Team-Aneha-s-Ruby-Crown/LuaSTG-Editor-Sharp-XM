@@ -19,7 +19,7 @@ using LuaSTGEditorSharp.EditorData.Node.Graphics;
 using LuaSTGEditorSharp.EditorData.Node.Audio;
 using LuaSTGEditorSharp.EditorData.Node.Render;
 using LuaSTGEditorSharp.EditorData.Node.Advanced;
-
+using LuaSTGEditorSharp.EditorData.Node.Tania;
 
 namespace LuaSTGEditorSharp
 {
@@ -484,6 +484,17 @@ namespace LuaSTGEditorSharp
                 , new AddNode(AddPlayerNextSpecialNode));
             #endregion 
             ToolInfo.Add("Player", player);
+
+            var tanialib = new Dictionary<ToolboxItemData, AddNode>();
+            #region TaniaLib
+            tanialib.Add(new ToolboxItemData("giverank", "/LuaSTGNode.Legacy;component/images/giveRank.png", "Give Stage Rank")
+                , new AddNode(AddGiveRankNode));
+            tanialib.Add(new ToolboxItemData("beforeboss", "/LuaSTGNode.Legacy;component/images/beforeboss.png", "Before boss deletion")
+                , new AddNode(AddBeforeBossNode));
+            tanialib.Add(new ToolboxItemData("stagecamerablocker", "/LuaSTGNode.Legacy;component/images/camerasetter.png", "Stage Camera Test Blocker")
+                , new AddNode(AddStageCameraTestBlockerNode));
+            #endregion
+            ToolInfo.Add("TaniaLib", tanialib);
 
             var gdata = new Dictionary<ToolboxItemData, AddNode>();
             #region gamedata
@@ -1566,6 +1577,24 @@ namespace LuaSTGEditorSharp
         {
             parent.Insert(new CreatePlayerBullet(parent.ActivatedWorkSpaceData));
         }
+        #endregion
+        #region TaniaLib
+
+        private void AddGiveRankNode()
+        {
+            parent.Insert(new GiveRank(parent.ActivatedWorkSpaceData));
+        }
+
+        private void AddBeforeBossNode()
+        {
+            parent.Insert(new BeforeBoss(parent.ActivatedWorkSpaceData));
+        }
+
+        private void AddStageCameraTestBlockerNode()
+        {
+            parent.Insert(new StageCameraTestBlocker(parent.ActivatedWorkSpaceData));
+        }
+
         #endregion
 
         #region game data

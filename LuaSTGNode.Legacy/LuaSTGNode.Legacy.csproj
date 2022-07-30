@@ -286,6 +286,9 @@
     <Compile Include="EditorData\Node\Stage\StageGroup.cs" />
     <Compile Include="EditorData\Node\LaserAlikeTypes.cs" />
     <Compile Include="EditorData\Node\Stage\StageGroupFinish.cs" />
+    <Compile Include="EditorData\Node\TaniaLib\BeforeBoss.cs" />
+    <Compile Include="EditorData\Node\TaniaLib\GiveRank.cs" />
+    <Compile Include="EditorData\Node\TaniaLib\StageCameraTestBlocker.cs" />
     <Compile Include="EditorData\Node\TaskTypes.cs" />
     <Compile Include="EditorData\Node\TaskAlikeTypes.cs" />
     <Compile Include="EditorData\Node\Task\RaiseWarning.cs" />
@@ -2183,6 +2186,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\16x16\createitem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\giveRank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\16x16\giveRank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\beforeboss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\16x16\beforeboss.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
