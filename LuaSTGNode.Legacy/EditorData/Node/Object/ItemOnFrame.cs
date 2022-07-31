@@ -57,7 +57,7 @@ namespace LuaSTGEditorSharp.EditorData.Node.Object
                 + sp + s1 + "if self.attract >= 8 then\n"
                 + sp + s1 + s1 + "self.collected = true\n"
                 + sp + s1 + "end\n";
-            foreach (var a in base.ToLua(spacing + 1))
+            foreach (var a in base.ToLua(spacing + 2))
             {
                 yield return a;
             }
